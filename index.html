@@ -3,21 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather App</title>
+  <title>Enhanced Weather App</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <div class="container">
     <div class="search-section">
       <h1>Weather App</h1>
-      <input type="text" id="cityInput" placeholder="Enter city name">
-      <button id="searchBtn">Search</button>
-      <button id="locationBtn">Use My Location</button>
+      <div class="search-container">
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button id="searchBtn"><i class="fas fa-search"></i></button>
+        <button id="locationBtn"><i class="fas fa-map-marker-alt"></i></button>
+      </div>
+      <div class="theme-toggle">
+        <button id="themeBtn"><i class="fas fa-moon"></i></button>
+      </div>
     </div>
+
+    <div id="searchHistory" class="search-history">
+      <h3>Recent Searches</h3>
+      <ul id="historyList"></ul>
+    </div>
+
+    <div id="loader" class="loader"></div>
+    
+    <div id="alerts" class="alerts"></div>
+
     <div id="weatherDisplay">
-      <div id="weatherResult" class="weather-card"></div>
+      <div id="weatherResult" class="weather-card">
+        <div class="unit-toggle">
+          <button id="tempToggle">Switch to °F</button>
+        </div>
+      </div>
+
+      <div class="additional-info">
+        <div id="airQuality" class="info-card"></div>
+        <div id="sunInfo" class="info-card"></div>
+      </div>
+
       <div id="forecastResult" class="forecast-container"></div>
+      
+      <div id="weeklyForecast" class="weekly-forecast">
+        <h3>Weekly Forecast</h3>
+        <div class="weekly-cards"></div>
+      </div>
     </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 Uttej P. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://github.com/yu-14" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/uttej-p14/" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
   </div>
   <script src="script.js"></script>
 </body>

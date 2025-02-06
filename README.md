@@ -1,40 +1,60 @@
-# Weather App
+# Enhanced Weather App
 
-A simple and responsive weather application that shows current weather and 3-day forecast for any city. Built with HTML, CSS, and JavaScript.
+A modern and comprehensive weather application that provides detailed weather information, forecasts, and air quality data with an intuitive user interface.
 
 ## Features
 
-- Search weather by city name
-- Get weather for current location
-- Display current weather conditions
-- Show 3-day weather forecast
-- Dynamic background based on weather condition
-- Responsive design
+### Core Features
+- Real-time weather data
+- 7-day weather forecast
+- Temperature unit conversion (°C/°F)
+- Air quality information
+- Search by city name
+- Current location detection
+- Search history with local storage
+
+### Weather Information
+- Current temperature
+- Feels like temperature
+- Humidity levels
+- Wind speed
+- UV Index
+- Precipitation
+- Atmospheric pressure
+- Sunrise/Sunset times
 
 ## Screenshots
 
-### Main Screen
-![Main Screen](screenshots/main-screen.png)
+### Main Interface
+![Main Interface](Images/one.png)
 
-### Weather Results
-![Weather Results](one.png)
+### Weather Details
+![Weather Details](Images/two.png)
 
 ### Forecast View
-![Forecast View](two.png)
+![Forecast](Images/three.png)
 
-### Different Weather Conditions
-![Sunny Weather](three.png)
-![Rainy Weather](four.png)
+### Search Results
+![Search Results](Images/four.png)
+
+### Dark Theme
+![Dark Theme](Images/five.png)
 
 ## Technologies Used
 
 - HTML5
-- CSS3
-- JavaScript
-- Weather API (weatherapi.com)
+- CSS3 (with CSS Variables for theming)
+- JavaScript (ES6+)
+- [Weather API](https://www.weatherapi.com/)
+- [Font Awesome](https://fontawesome.com/) for icons
+- LocalStorage for data persistence
 
-## Setup
+## Author
 
-1. Clone the repository:
-```bash
-git clone https://github.com/yu-14/weather-app.git
+**Uttej P**
+- GitHub: [@yu-14](https://github.com/yu-14)
+- LinkedIn: [Uttej P](https://www.linkedin.com/in/uttej-p14/)
+
+## License
+
+Copyright © 2024 Pilli Uttej. All rights reserved.
